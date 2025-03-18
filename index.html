@@ -96,18 +96,79 @@
             
         }
 
-
-
-
-      
-
-        
-
-
-
-
        
         
+        // Task 6: Check if a Number Exists in the Array
+
+        let arr6 = [1, 2, 3, 4, 5 , 6 , 7, 8, 9, 10 , 11];
+        let user = prompt("Enter a number")
+
+        for (let i = 0; i < arr6.length; i++) {
+           
+            if (arr6[i] == user) {
+                console.log("Number found");
+                break
+                
+            } else{
+                console.log("Number not found");
+            }
+        }
+
+
+        // Task 7: Remove All Positive Numbers
+
+        let arr7 = [1, -2, 3, -4, 5 , -6 , 7, -8, 9, 10 , 11];
+
+        let positive = []
+
+        for (let i = 0; i < arr7.length; i++) {
+
+            if (arr7[i] >= 0) {
+
+                positive.push(arr7[i])
+            }
+        }   
+
+        console.log(positive);
+
+        // Task 7: Remove All Nagitive Numbers
+
+        let arr7nag = [1, -2, 3, -4, 5 , -6 , 7, -8, 9, 10 , 11];
+
+        let Nagitive = []
+
+        for (let i = 0; i < arr7nag.length; i++) {
+
+            if (arr7nag[i] <= 0) {
+
+                Nagitive.push(arr7nag[i])
+            }
+        }   
+
+        console.log(Nagitive);
+        
+
+        // Task 8: Student Attendance
+
+        let attendance = [1, 0, 1, 1, 0, 0, 1, 1, 1, 0];
+        let present = 0;
+        let absent = 0;
+
+        for (let i = 0; i < attendance.length; i++) {
+           if (attendance[i] == 1) {
+            present++
+           } else{
+            absent++
+            
+           }
+            
+        }
+        
+        console.log("Present " + present);
+        console.log("Absent " + absent);
+        
+
+
     </script>
 </body>
 </html>
